@@ -2,14 +2,14 @@
 
 Third person shooter demo made using [Godot Engine](https://godotengine.org).
 
-Check out this demo on the asset library: https://godotengine.org/asset-library/asset/678
+Check out the original demo on the [asset library](https://godotengine.org/asset-library/asset/678) and [github](https://github.com/godotengine/tps-demo).
 
 ![Screenshot of TPS demo](screenshots/screenshot.png)
 
 ## Godot versions
 
 - The [`master`](https://github.com/godotengine/tps-demo) branch is compatible with the latest stable Godot version (currently 3.5.x).
-- If you are using an older version of Godot, use the appropriate branch for your Godot version:
+- If you are using an older version of Godot, head over to the [original repo](https://github.com/godotengine/tps-demo) and use the appropriate branch for your Godot version:
 
   - [`3.3`](https://github.com/godotengine/tps-demo/tree/3.3) branch
   for Godot 3.3.x.
@@ -35,8 +35,7 @@ You need [Godot Engine](https://godotengine.org) to run this demo project.
 Download the latest stable version [from the website](https://godotengine.org/download/),
 or [build it from source](https://github.com/godotengine/godot).
 
-You can either download from the Godot Asset Library, clone this repository, or
-[download a ZIP archive](https://github.com/godotengine/tps-demo/archive/master.zip).
+You can either clone this repository, or [download a ZIP archive](https://github.com/aidan-j-rhoden/tps-demo/archive/master.zip).
 
 ## Useful links
 
