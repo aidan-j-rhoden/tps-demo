@@ -1,7 +1,7 @@
 class_name Player
 extends KinematicBody
 
-const CAMERA_MOUSE_ROTATION_SPEED = 0.0013
+const CAMERA_MOUSE_ROTATION_SPEED = 0.001
 const CAMERA_CONTROLLER_ROTATION_SPEED = 3.0
 # A minimum angle lower than or equal to -90 breaks movement if the player is looking upward.
 const CAMERA_X_ROT_MIN = -89.9
@@ -20,10 +20,6 @@ const MIN_AIRBORNE_TIME = 0.1
 const JUMP_SPEED = 5
 
 var airborne_time = 100
-
-const MAXHEALTH = 4
-export(int) var health = MAXHEALTH
-export(bool) var dead = false
 
 var orientation = Transform()
 var root_motion = Transform()
@@ -80,13 +76,9 @@ func _process(delta):
 		# If we're below -40, respawn (teleport to the initial position).
 		if transform.origin.y < -40:
 			transform.origin = initial_position
-	elif not dead:
+	else:
+		# Fade out the black ColorRect progressively after being teleported back.
 		color_rect.modulate.a *= 1.0 - delta * 4
-	if dead:
-		color_rect.modulate.a = min(abs(health) / 3, 1)
-		if health <= -4:
-			reset()
-		health -= delta
 
 
 func _physics_process(delta):
@@ -260,19 +252,3 @@ func rotate_camera(move):
 
 func add_camera_shake_trauma(amount):
 	camera_camera.add_trauma(amount)
-
-
-func take_damage(amount):
-	health -= amount
-	if amount > 0:
-		add_camera_shake_trauma(amount*13)
-	if health <= 0:
-		dead = true
-	if health > MAXHEALTH:
-		health = MAXHEALTH
-
-
-func reset():
-	transform.origin = initial_position
-	dead = false #Whoops. Forgot that.
-	health = 4
