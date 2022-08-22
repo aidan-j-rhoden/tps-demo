@@ -8,7 +8,7 @@ enum State {
 
 const PLAYER_AIM_TOLERANCE_DEGREES = 15
 
-const SHOOT_WAIT = 4.0
+const SHOOT_WAIT = 6.0
 const AIM_TIME = 1
 
 const AIM_PREPARE_TIME = 0.5
@@ -116,7 +116,7 @@ func shoot():
 	if not col.empty():
 		max_dist = ray_origin.distance_to(col.position)
 		if col.collider == player:
-			pass
+			pass # Kill.
 	# Clip ray in shader.
 	_clip_ray(max_dist)
 	# Position laser ember particles
@@ -142,10 +142,6 @@ func _physics_process(delta):
 		return
 
 	if not player:
-		animation_tree["parameters/state/current"] = 0 # Go idle.
-		return
-
-	if player.dead: # We don't want the robot to continue to chase the player after it dies.
 		animation_tree["parameters/state/current"] = 0 # Go idle.
 		return
 
