@@ -83,7 +83,7 @@ func _process(delta):
 	elif not dead:
 		color_rect.modulate.a *= 1.0 - delta * 4
 	if dead:
-		color_rect.modulate.a = min(abs(health) / 3, 1)
+		color_rect.modulate.a = min(abs(health) / 3.5, 1)
 		if health <= -4:
 			reset()
 		health -= delta
