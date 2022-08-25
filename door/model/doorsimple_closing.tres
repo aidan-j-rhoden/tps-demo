@@ -75,3 +75,31 @@ tracks/8/keys = {
 } ],
 "times": PoolRealArray( 0.3 )
 }
+tracks/9/type = "transform"
+tracks/9/path = NodePath("armature-doorsimple/Skeleton/doorleft/CollisionShape")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = PoolRealArray( 0.1, 1, 3.3, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2.05, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/10/type = "transform"
+tracks/10/path = NodePath("armature-doorsimple/Skeleton/doorright/CollisionShape")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = PoolRealArray( 0.1, 1, -3.3, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2.05, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/11/type = "transform"
+tracks/11/path = NodePath("armature-doorsimple/Skeleton/doorlower/CollisionShape")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = PoolRealArray( 0.1, 1, 0, -0.7, 0, 0, 0, 0, 1, 1, 1, 1, 1.4, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/12/type = "transform"
+tracks/12/path = NodePath("armature-doorsimple/Skeleton/doorupper/CollisionShape")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = PoolRealArray( 0.1, 1, 0, 1.05, 0, 0, 0, 0, 1, 1, 1, 1, 2.05, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
