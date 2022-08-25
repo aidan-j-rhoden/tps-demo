@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://level/geometry/scenes/collision/radial_colliders.tscn" type="PackedScene" id=1]
 [ext_resource path="res://level/geometry/scenes/collision/stair_pillar.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://level/textures/structure/Core/core_laval_spotches.png" type="Texture" id=11]
 [ext_resource path="res://level/textures/structure/Core/CoreOutLight_Circle001.mesh" type="ArrayMesh" id=12]
 [ext_resource path="res://level/textures/structure/Core/core_fire_noise.png" type="Texture" id=13]
+[ext_resource path="res://door/door.tscn" type="PackedScene" id=14]
 
 [sub_resource type="Shader" id=11]
 code = "shader_type spatial;
@@ -186,6 +187,9 @@ extents = Vector3( 0.6, 0.6, 1.4 )
 
 [node name="Sphere001" parent="CoreModel" index="105"]
 visible = false
+
+[node name="Door" parent="CoreModel" instance=ExtResource( 14 )]
+transform = Transform( 0.284952, 0, 0.958542, 0, 1, 0, -0.958542, 0, 0.284952, 35.697, -6.16192, 10.929 )
 
 [node name="Plasma" type="CPUParticles" parent="."]
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -2.3, 0 )
