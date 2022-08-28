@@ -192,7 +192,7 @@ visible = false
 transform = Transform( 0.290735, 0, 0.956804, 0, 1, 0, -0.956804, 0, 0.290735, 40.2546, -6.19125, 12.3315 )
 
 [node name="Door2" parent="CoreModel" instance=ExtResource( 14 )]
-transform = Transform( 0.293539, 0, 0.955947, 0, 1, 0, -0.955947, 0, 0.293539, 35.6616, -6.35157, 10.9909 )
+transform = Transform( 0.293539, 0, 0.955947, 0, 1, 0, -0.955947, 0, 0.293539, 35.6616, -6.33838, 10.9909 )
 
 [node name="Plasma" type="CPUParticles" parent="."]
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -2.3, 0 )
