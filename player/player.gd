@@ -265,7 +265,7 @@ func add_camera_shake_trauma(amount):
 func take_damage(amount):
 	health -= amount
 	if amount > 0:
-		add_camera_shake_trauma(amount*13)
+		add_camera_shake_trauma(amount*2)
 	if health <= 0:
 		dead = true
 	if health > MAXHEALTH:
