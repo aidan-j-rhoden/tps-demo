@@ -229,7 +229,7 @@ func _physics_process(delta):
 	# Apply root motion to orientation.
 	orientation *= root_motion
 
-	var h_velocity = orientation.origin / delta
+	var h_velocity = orientation.origin / delta #This is the jumping velocity
 	velocity.x = h_velocity.x
 	velocity.z = h_velocity.z
 	velocity += gravity * delta
