@@ -189,7 +189,7 @@ extents = Vector3( 0.6, 0.6, 1.4 )
 visible = false
 
 [node name="Door" parent="CoreModel" instance=ExtResource( 14 )]
-transform = Transform( 0.472874, 0, 0.88113, 0, 1, 0, -0.88113, 0, 0.472874, 27.0611, -4.5984, 7.87053 )
+transform = Transform( 0.289383, 0, 0.957213, 0, 1, 0, -0.957213, 0, 0.289383, 40.2358, -6.29841, 12.2729 )
 
 [node name="Door2" parent="CoreModel" instance=ExtResource( 14 )]
 transform = Transform( 0.293539, 0, 0.955947, 0, 1, 0, -0.955947, 0, 0.293539, 35.6616, -6.33838, 10.9909 )
