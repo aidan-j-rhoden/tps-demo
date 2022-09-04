@@ -206,7 +206,7 @@ func _physics_process(delta):
 			muzzle_particle.emitting = true
 			fire_cooldown.start()
 			sound_effect_shoot.play()
-			camera_camera.add_trauma(0.35)
+			camera_camera.add_trauma(0.65)
 
 	else: # Not in air or aiming, idle.
 		# Convert orientation to quaternions for interpolating rotation.
