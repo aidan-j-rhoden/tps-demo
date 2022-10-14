@@ -53,6 +53,9 @@ scale = 0.3
 scale_curve = SubResource( 7 )
 color_ramp = SubResource( 5 )
 
+[sub_resource type="AnimationNodeAnimation" id=38]
+animation = "jump_5_hardlanding"
+
 [sub_resource type="AnimationNodeAdd3" id=9]
 resource_local_to_scene = true
 filter_enabled = true
@@ -75,10 +78,6 @@ filters = [ "Robot_Skeleton/Skeleton:eyelid.d.L", "Robot_Skeleton/Skeleton:eyeli
 resource_local_to_scene = true
 animation = "eyes-cycle"
 
-[sub_resource type="AnimationNodeAnimation" id=14]
-resource_local_to_scene = true
-animation = "jump_5_hardlanding"
-
 [sub_resource type="AnimationNodeAnimation" id=15]
 resource_local_to_scene = true
 animation = "jump_4_falling-cycle"
@@ -87,11 +86,9 @@ animation = "jump_4_falling-cycle"
 resource_local_to_scene = true
 animation = "jump_2_upwards-cycle"
 
-[sub_resource type="AnimationNodeOneShot" id=17]
-resource_local_to_scene = true
-fadein_time = 0.25
-fadeout_time = 0.25
-autorestart_random_delay = 1.0
+[sub_resource type="AnimationNodeOneShot" id=39]
+filter_enabled = true
+filters = [ "Robot_Skeleton/Skeleton:Cannon_Aim", "Robot_Skeleton/Skeleton:HeadTarget", "Robot_Skeleton/Skeleton:SPINECONTROL", "Robot_Skeleton/Skeleton:SPiston-a1.L", "Robot_Skeleton/Skeleton:SPiston-a1.R", "Robot_Skeleton/Skeleton:SPiston-a2.L", "Robot_Skeleton/Skeleton:SPiston-a2.R", "Robot_Skeleton/Skeleton:SPiston-b1.L", "Robot_Skeleton/Skeleton:SPiston-b1.R", "Robot_Skeleton/Skeleton:SPiston-b2.L", "Robot_Skeleton/Skeleton:SPiston-b2.R", "Robot_Skeleton/Skeleton:SPiston-c1.L", "Robot_Skeleton/Skeleton:SPiston-c1.R", "Robot_Skeleton/Skeleton:SPiston-c2.L", "Robot_Skeleton/Skeleton:SPiston-c2.R", "Robot_Skeleton/Skeleton:abdocable.L", "Robot_Skeleton/Skeleton:abdocable.R", "Robot_Skeleton/Skeleton:arm-ikt.L", "Robot_Skeleton/Skeleton:arm-ikt.R", "Robot_Skeleton/Skeleton:boosterpack", "Robot_Skeleton/Skeleton:boosterpack-cover", "Robot_Skeleton/Skeleton:boosterpack-cover.002", "Robot_Skeleton/Skeleton:chest", "Robot_Skeleton/Skeleton:elbow-ikt.L", "Robot_Skeleton/Skeleton:elbow-ikt.R", "Robot_Skeleton/Skeleton:eyelid.d.L", "Robot_Skeleton/Skeleton:eyelid.d.R", "Robot_Skeleton/Skeleton:eyelid.u.L", "Robot_Skeleton/Skeleton:eyelid.u.R", "Robot_Skeleton/Skeleton:eyes", "Robot_Skeleton/Skeleton:f_index.01.L", "Robot_Skeleton/Skeleton:f_index.02.L", "Robot_Skeleton/Skeleton:f_index.03.L", "Robot_Skeleton/Skeleton:f_index1scaler-ikt.L", "Robot_Skeleton/Skeleton:f_index1scaler.L", "Robot_Skeleton/Skeleton:f_middle.01.L", "Robot_Skeleton/Skeleton:f_middle.02.L", "Robot_Skeleton/Skeleton:f_middle.03.L", "Robot_Skeleton/Skeleton:f_middle1scaler.L", "Robot_Skeleton/Skeleton:f_middle1scalerikt.L", "Robot_Skeleton/Skeleton:f_ring.01.L", "Robot_Skeleton/Skeleton:f_ring.02.L", "Robot_Skeleton/Skeleton:f_ring.03.L", "Robot_Skeleton/Skeleton:f_ring1scaler.L", "Robot_Skeleton/Skeleton:f_ring1scalerikt.L", "Robot_Skeleton/Skeleton:foot.L", "Robot_Skeleton/Skeleton:foot.R", "Robot_Skeleton/Skeleton:footcover.L", "Robot_Skeleton/Skeleton:footcover.R", "Robot_Skeleton/Skeleton:forearm.L", "Robot_Skeleton/Skeleton:forearm.L.003", "Robot_Skeleton/Skeleton:forearm.R", "Robot_Skeleton/Skeleton:forearm.R.003", "Robot_Skeleton/Skeleton:forearmslider.R", "Robot_Skeleton/Skeleton:hand-coverplate-ikt.L", "Robot_Skeleton/Skeleton:hand.L", "Robot_Skeleton/Skeleton:head.001", "Robot_Skeleton/Skeleton:headcore", "Robot_Skeleton/Skeleton:heel-ikt.L", "Robot_Skeleton/Skeleton:heel-ikt.R", "Robot_Skeleton/Skeleton:hips", "Robot_Skeleton/Skeleton:knee-control.L", "Robot_Skeleton/Skeleton:knee-control.R", "Robot_Skeleton/Skeleton:knee-ikt.L", "Robot_Skeleton/Skeleton:knee-ikt.R", "Robot_Skeleton/Skeleton:knee.L", "Robot_Skeleton/Skeleton:knee.R", "Robot_Skeleton/Skeleton:kneepad-ikt.L", "Robot_Skeleton/Skeleton:kneepad-ikt.R", "Robot_Skeleton/Skeleton:kneepad.L", "Robot_Skeleton/Skeleton:kneepad.R", "Robot_Skeleton/Skeleton:mouth", "Robot_Skeleton/Skeleton:neck", "Robot_Skeleton/Skeleton:neck.001", "Robot_Skeleton/Skeleton:otherarmik", "Robot_Skeleton/Skeleton:palm.01.L", "Robot_Skeleton/Skeleton:palm.02.L", "Robot_Skeleton/Skeleton:palm.03.L", "Robot_Skeleton/Skeleton:palm.L", "Robot_Skeleton/Skeleton:palm.L.001", "Robot_Skeleton/Skeleton:root", "Robot_Skeleton/Skeleton:shin.L", "Robot_Skeleton/Skeleton:shin.R", "Robot_Skeleton/Skeleton:shoulder.L", "Robot_Skeleton/Skeleton:shoulder.R", "Robot_Skeleton/Skeleton:shoulderpad-adjust.L", "Robot_Skeleton/Skeleton:shoulderpad-adjust.R", "Robot_Skeleton/Skeleton:shoulderpad-ikt.L", "Robot_Skeleton/Skeleton:shoulderpad-ikt.R", "Robot_Skeleton/Skeleton:shoulderpad.L", "Robot_Skeleton/Skeleton:shoulderpad.R", "Robot_Skeleton/Skeleton:spine1", "Robot_Skeleton/Skeleton:spine2", "Robot_Skeleton/Skeleton:spineflap1", "Robot_Skeleton/Skeleton:spineflap2", "Robot_Skeleton/Skeleton:spineflap3", "Robot_Skeleton/Skeleton:thigh.L", "Robot_Skeleton/Skeleton:thigh.R", "Robot_Skeleton/Skeleton:thumb.01.L", "Robot_Skeleton/Skeleton:thumb.02.L", "Robot_Skeleton/Skeleton:thumb.03.L", "Robot_Skeleton/Skeleton:thumbscaler.L", "Robot_Skeleton/Skeleton:thumbscalerikt.L", "Robot_Skeleton/Skeleton:toe.L", "Robot_Skeleton/Skeleton:toe.R", "Robot_Skeleton/Skeleton:upper_arm.L", "Robot_Skeleton/Skeleton:upper_arm.R" ]
 
 [sub_resource type="AnimationNodeTransition" id=18]
 resource_local_to_scene = true
@@ -175,25 +172,25 @@ y_label = "gun"
 
 [sub_resource type="AnimationNodeBlendTree" id=30]
 resource_local_to_scene = true
-graph_offset = Vector2( -789, -157 )
+graph_offset = Vector2( -402.379, -1.08236 )
+nodes/Animation/node = SubResource( 38 )
+nodes/Animation/position = Vector2( 560, 340 )
 nodes/aim/node = SubResource( 9 )
 nodes/aim/position = Vector2( 380, 120 )
 nodes/aimdown/node = SubResource( 10 )
-nodes/aimdown/position = Vector2( 120, 60 )
+nodes/aimdown/position = Vector2( 180, 0 )
 nodes/aimup/node = SubResource( 11 )
 nodes/aimup/position = Vector2( 140, 380 )
 nodes/eye_blend/node = SubResource( 12 )
-nodes/eye_blend/position = Vector2( 640, 120 )
+nodes/eye_blend/position = Vector2( 590, 130 )
 nodes/eyes/node = SubResource( 13 )
 nodes/eyes/position = Vector2( 380, 360 )
-nodes/hardland/node = SubResource( 14 )
-nodes/hardland/position = Vector2( -160, 340 )
 nodes/jumpdown/node = SubResource( 15 )
 nodes/jumpdown/position = Vector2( -460, 320 )
 nodes/jumpup/node = SubResource( 16 )
 nodes/jumpup/position = Vector2( -480, 200 )
-nodes/land/node = SubResource( 17 )
-nodes/land/position = Vector2( 120, 180 )
+nodes/land/node = SubResource( 39 )
+nodes/land/position = Vector2( 820.503, 221.657 )
 nodes/output/position = Vector2( 840, 120 )
 nodes/state/node = SubResource( 18 )
 nodes/state/position = Vector2( -80, 100 )
@@ -205,7 +202,7 @@ nodes/walk/node = SubResource( 29 )
 nodes/walk/position = Vector2( -460, 40 )
 nodes/walk_speed/node = SubResource( 36 )
 nodes/walk_speed/position = Vector2( -280, 60 )
-node_connections = [ "state", 0, "strafe_speed", "state", 1, "walk_speed", "state", 2, "jumpup", "state", 3, "jumpdown", "output", 0, "eye_blend", "walk_speed", 0, "walk", "aim", 0, "aimdown", "aim", 1, "land", "aim", 2, "aimup", "eye_blend", 0, "aim", "eye_blend", 1, "eyes", "land", 0, "state", "land", 1, "hardland", "strafe_speed", 0, "strafe" ]
+node_connections = [ "output", 0, "land", "state", 0, "strafe_speed", "state", 1, "walk_speed", "state", 2, "jumpup", "state", 3, "jumpdown", "land", 0, "eye_blend", "land", 1, "Animation", "aim", 0, "aimdown", "aim", 1, "state", "aim", 2, "aimup", "eye_blend", 0, "aim", "eye_blend", 1, "eyes", "strafe_speed", 0, "strafe", "walk_speed", 0, "walk" ]
 
 [sub_resource type="CapsuleShape" id=31]
 radius = 0.5
@@ -282,7 +279,7 @@ transform = Transform( 0.803991, 0, 0, 0, 0.803991, 0, 0, 0, 0.803991, 0, 0, 0 )
 bones/55/bound_children = [ NodePath("GunBone") ]
 
 [node name="GunBone" type="BoneAttachment" parent="PlayerModel/Robot_Skeleton/Skeleton" index="5"]
-transform = Transform( 0.923127, -0.382575, -0.041099, -0.0231363, 0.0514465, -0.998416, 0.384127, 0.922491, 0.0386362, -0.205969, 1.38162, 0.508228 )
+transform = Transform( 0.196039, 0.283804, -0.938641, 0.444337, 0.82762, 0.343019, 0.874292, -0.484253, 0.0361374, -0.310714, 1.10736, -0.0767239 )
 bone_name = "hand.R"
 
 [node name="ShootFrom" type="Position3D" parent="PlayerModel/Robot_Skeleton/Skeleton/GunBone"]
@@ -325,7 +322,7 @@ root_motion_track = NodePath("Robot_Skeleton/Skeleton:root")
 parameters/aim/add_amount = 0
 parameters/eye_blend/blend_amount = 1.0
 parameters/land/active = false
-parameters/state/current = 0
+parameters/state/current = 1
 parameters/strafe/blend_position = Vector2( 0, 0 )
 parameters/strafe_speed/scale = 1.2
 parameters/walk/blend_position = Vector2( 0, 0 )

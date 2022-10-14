@@ -131,6 +131,8 @@ func _physics_process(delta):
 	if is_on_floor():
 		if airborne_time > 0.5:
 			sound_effect_land.play()
+			if airborne_time > 1.15:
+				animation_tree["parameters/land/active"] = true
 		airborne_time = 0
 
 	var on_air = airborne_time > MIN_AIRBORNE_TIME
