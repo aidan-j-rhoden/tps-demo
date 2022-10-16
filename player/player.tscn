@@ -174,7 +174,7 @@ y_label = "gun"
 
 [sub_resource type="AnimationNodeBlendTree" id=30]
 resource_local_to_scene = true
-graph_offset = Vector2( -79.9559, 80.6783 )
+graph_offset = Vector2( 340.74, 301.53 )
 nodes/aim/node = SubResource( 9 )
 nodes/aim/position = Vector2( 380, 120 )
 nodes/aimdown/node = SubResource( 10 )
@@ -206,7 +206,7 @@ nodes/walk/node = SubResource( 29 )
 nodes/walk/position = Vector2( -250, 110 )
 nodes/walk_speed/node = SubResource( 36 )
 nodes/walk_speed/position = Vector2( -70, 130 )
-node_connections = [ "state", 0, "strafe_speed", "state", 1, "walk_speed", "state", 2, "jumpup", "state", 3, "jumpdown", "output", 0, "land", "landing_speed", 0, "hardlanding", "aim", 0, "aimdown", "aim", 1, "state", "aim", 2, "aimup", "eye_blend", 0, "aim", "eye_blend", 1, "eyes", "land", 0, "eye_blend", "land", 1, "landing_speed", "strafe_speed", 0, "strafe", "walk_speed", 0, "walk" ]
+node_connections = [ "aim", 0, "aimdown", "aim", 1, "state", "aim", 2, "aimup", "eye_blend", 0, "aim", "eye_blend", 1, "eyes", "land", 0, "eye_blend", "land", 1, "landing_speed", "landing_speed", 0, "hardlanding", "strafe_speed", 0, "strafe", "walk_speed", 0, "walk", "state", 0, "strafe_speed", "state", 1, "walk_speed", "state", 2, "jumpup", "state", 3, "jumpdown", "output", 0, "land" ]
 
 [sub_resource type="CapsuleShape" id=31]
 radius = 0.5
@@ -283,7 +283,7 @@ transform = Transform( 0.803991, 0, 0, 0, 0.803991, 0, 0, 0, 0.803991, 0, 0, 0 )
 bones/55/bound_children = [ NodePath("GunBone") ]
 
 [node name="GunBone" type="BoneAttachment" parent="PlayerModel/Robot_Skeleton/Skeleton" index="5"]
-transform = Transform( 0.921076, -0.388577, -0.0290196, -0.0159563, 0.0368119, -0.999202, 0.389381, 0.92068, 0.0277028, -0.206937, 1.38156, 0.504857 )
+transform = Transform( 0.928266, -0.366841, -0.0629887, -0.0169029, 0.127521, -0.991699, 0.371871, 0.921502, 0.11216, -0.207254, 1.3865, 0.469394 )
 bone_name = "hand.R"
 
 [node name="ShootFrom" type="Position3D" parent="PlayerModel/Robot_Skeleton/Skeleton/GunBone"]
@@ -326,7 +326,7 @@ root_motion_track = NodePath("Robot_Skeleton/Skeleton:root")
 parameters/aim/add_amount = 0
 parameters/eye_blend/blend_amount = 1.0
 parameters/land/active = false
-parameters/landing_speed/scale = 0.5
+parameters/landing_speed/scale = 0.6
 parameters/state/current = 0
 parameters/strafe/blend_position = Vector2( 0, 0 )
 parameters/strafe_speed/scale = 1.2
