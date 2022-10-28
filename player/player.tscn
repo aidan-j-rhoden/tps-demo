@@ -76,6 +76,7 @@ resource_local_to_scene = true
 animation = "eyes-cycle"
 
 [sub_resource type="AnimationNodeAnimation" id=38]
+resource_local_to_scene = true
 animation = "jump_5_hardlanding"
 
 [sub_resource type="AnimationNodeAnimation" id=15]
