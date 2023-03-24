@@ -20,8 +20,10 @@ Check out the original demo on the [asset library](https://godotengine.org/asset
   - [`3.1`](https://github.com/godotengine/tps-demo/tree/3.1) branch
   for Godot 3.1.x.
 
-**Note:** The repository is big and asset importing not well optimized yet,
-so expect a high wait time when opening the project for the first time.
+> **Note**
+>
+> The repository is big, so expect a high wait time when opening the project for
+> the first time.
 
 ## Git LFS
 
@@ -36,6 +38,17 @@ Download the latest stable version [from the website](https://godotengine.org/do
 or [build it from source](https://github.com/godotengine/godot).
 
 You can either clone this repository, or [download a ZIP archive](https://github.com/aidan-j-rhoden/tps-demo/archive/master.zip).
+
+## Controls
+
+- Mouse or <kbd>Gamepad Right Stick</kbd>: Look around
+- <kbd>W</kbd>/<kbd>A</kbd>/<kbd>S</kbd>/<kbd>D</kbd>, <kbd>Arrow keys</kbd>, <kbd>Gamepad Left Analog Stick</kbd> or <kbd>Gamepad D-Pad</kbd>: Move
+- <kbd>Space</kbd>, <kbd>Gamepad A/Cross</kbd>: Jump
+- <kbd>Right Mouse Button</kbd>, <kbd>Gamepad Left Trigger (L2)</kbd> (press to toggle, or hold and release): Aim
+- <kbd>Left Mouse Button</kbd>, <kbd>Gamepad Right Trigger (R2)</kbd>: Shoot (only while aiming)
+- <kbd>Escape</kbd>, <kbd>Gamepad Start</kbd>: Go to main menu/quit
+- <kbd>F11</kbd> or <kbd>Alt + Enter</kbd>: Toggle fullscreen
+- <kbd>F3</kbd>: Toggle debugging information (such as FPS counter)
 
 ## Useful links
 
